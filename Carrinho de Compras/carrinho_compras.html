@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br>">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Carrinho de Compras</title> 
+
+</head>
+
+<style>
+
+    h1{
+        text-align: center;       
+          }
+
+    #card {
+        width: 900px;
+        text-align: center;
+        margin: 50px;
+        box-shadow: grey 1px 1px 5px;
+        padding: 10px;
+        border-radius: 5%;
+        background-color: silver;
+        display:flex;
+    }
+
+    #relatorio{
+        width: 600px;
+        text-align: center;
+        margin: 50px;
+        box-shadow: grey 1px 1px 5px;
+        padding: 10px;
+        border-radius: 5%;
+        background-color: aliceblue;
+        font-size: 20px;        
+    }
+
+    #totalCompras{
+        width: 600px;
+        text-align:left; 
+        margin: 50px;
+        box-shadow: grey 1px 1px 5px;
+        padding: 10px;
+        border-radius: 5%;   
+    }
+</style>
+
+
+<body>
+
+    <h1>Carrinho de Compras</h1>
+ 
+    <div id="card">       
+
+        <form method="post" id="formcarrinho_compras">
+
+            <p> <label for="nome">Digite o nome do Produto:</label>
+                <input type="text" name="nome_produto" id="nome_produto"></input>
+            </p>
+
+            <p><label for="valor_produto">Digite o valor do produto:</label>
+                <input type="text" name="valor_produto" id="valor_produto"></input>
+            </p>
+
+            <p><label for="quantidade_produto">Digite a quantidade do produto:</label>
+                <input type="number" name="quantidade_produto" id="quantidade_produto"></input>
+            </p>
+
+            <button type="submit">Salvar</button>
+
+            <button id="gerar">Finalizar Compra</button>
+
+        </form>
+    
+        <div id="relatorio"></div>
+
+    </div>
+   
+
+    <div id="totalCompras">Valor Total Compra:</div>
+
+
+    <script src="carrinho_compras.js"></script>
+
+</body>
+
+</html>
+
